@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi-Chun Chen - Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar1.jpg" alt="Chi-Chun Chen" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Chi-Chun Chen">Chi-Chun Chen</h1>
+
+          <p class="title">AI Alogorithm Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a href="https://github.com/your-profile" target="_blank">
+                <ion-icon name="business-outline"></ion-icon>
+              </a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Company</p>
+
+              <a href="https://www.itri.org.tw/" class="contact-link">Industrial Technology<br>Research Institute</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a href="77emilychen@gmail.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="77emilychen@gmail.com" class="contact-link">77emilychen@gmail<br>.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a href="tel:+886989597876" class="contact-link">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+886989597876" class="contact-link">+886-989597876</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Hshichu, Taiwan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/chichichen77" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/chichun-chen-a335a4268/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/77emily__/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            🏢 <br>
+            I am an assistant engineer specializing in <b class="highlight">AI algorithm development</b> at the
+            Industrial Technology Research Institute
+            <a href="https://www.itri.org.tw/english/index.aspx" target="_blank" class="abouthref"
+              style="display: inline;">(ITRI)</a> in Hsinchu, Taiwan. <br>
+            🏫 <br>
+            I am going to pursue my master’s degree in <a href="https://statistics.ucdavis.edu/grad/ms" target="_blank"
+              class="abouthref"><b class="highlight">Statistics at UC Davis</b></a> starting in
+            September 2024. <br>
+            I graduated with a <a href="http://www.stat.fju.edu.tw/en" target="_blank" class="abouthref">B.S. in
+              Statistics and Information Science</a>, with a minor in <a href="https://csie2.fju.edu.tw/"
+              target="_blank" class="abouthref">Computer Science and Information Engineering</a>, from Fu Jen Catholic
+            University<a href="https://www.fju.edu.tw/indexEN.jsp" target="_blank" class="abouthref"> (FJCU)</a>,
+            Taiwan, in February 2024. <br>
+            ♥️ <br>
+            My interests lie in <b class="highlight">AI algorithms</b>, particularly in <b class="highlight">computer
+              vision</b> and <b class="highlight">large language models (LLM)</b>. <br>
+            I also have experience as a data science intern. I welcome discussions on related research topics!
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.ucdavis.edu/" target="_blank" class="herfhover">University of California, Davis</a>
+                <span class="year">Expected: Sep.2024 - Jun.2026</span>
+              </h4>
+
+              <span class="departmenthover">
+                <a href="https://statistics.ucdavis.edu/grad/ms" target="_blank">• M.S. Statistics</a>
+                
+              </span>
+
+              <!-- 
+              <p class="timeline-text">
+              </p> 
+              -->
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://www.fju.edu.tw/indexEN.jsp" target="_blank" class="herfhover">Fu Jen Catholic University<br></a>
+                
+                <span class="year">Sep.2019 - Feb.2024</span>
+              </h4>
+
+              <span class="timeline-item-color">
+                <a href="https://statistics.ucdavis.edu/grad/ms" target="_blank">• Major: Statistics and Information Science<br></a>
+                <a href="https://csie2.fju.edu.tw/" target="_blank" >• Minor: Information Science and Computer Science<br></a>
+                <a href="https://sites.google.com/view/fjcubigdata/%E9%A6%96%E9%A0%81?fbclid=IwAR376lPN32cf6H0Ycf2lvIvVBZxRVzOD8wmf0-Pq4CcsTorYJTvML5bxUXI" target="_blank">• Elective: Big Data Industry and Education Project<br></a>
+              
+              </span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                AI Alogorithm Assistant Engineer
+                <span class="year">Mar.2024 - Aug.2024</span>
+              </h4>
+
+              <span>Industrial Technology Research Institute</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Data Scientist Intern
+                <span class="year">May.2023 - Sep.2023</span>
+              </h4>
+
+              <span>Industrial Technology Research Institute</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Compitions and Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Certificate of Academic Excellence College of Management FJCU
+                <span class="year">Dec.2022</span>
+              </h4>
+
+              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                International ICT Innovative Services Awards 2022
+                <span class="year">Nov.2022</span>
+              </h4>
+
+              <span>Team Leader</span>
+
+              <p class="timeline-text">
+                👑 <b class="highlight">The First Place</b> of Information Innovation team 8.<br>
+                👑 <b class="highlight">The Best Popularity</b> Award
+              </p>
+              
+              <div class="container mt-4">
+                <div class="row">
+                  <!-- Certification Card 1 -->
+                  <div class="col-md-6">
+                    <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal1">
+                      <img src="./assets/images/first.png" alt="PDF Preview" class="card-img-top">
+                      <div class="certification-card-footer">
+                        <span class="text-primary">Click to preview Firdt Place Award!</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Certification Card 2 -->
+                  <div class="col-md-6">
+                    <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal2">
+                      <img src="./assets/images/best.png" alt="PDF Preview" class="card-img-top">
+                      <div class="certification-card-footer">
+                        <span class="text-primary">Click to preview Best Popularity Award!</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Certification Card 3 -->
+                  <div class="col-md-6">
+                    <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal3">
+                      <img src="./assets/images/ok.png" alt="PDF Preview" class="card-img-top">
+                      <div class="certification-card-footer">
+                        <span class="text-primary">Click to preview</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Video Modal -->
+                  <div class="col-md-6">
+                    <div class="certification-card" data-bs-toggle="modal" data-bs-target="#videoModal">
+                      <img src="./assets/images/ICT-movie.png" alt="Video Preview" class="card-img-top">
+                      <div class="certification-card-footer">
+                        <span class="text-primary">Click to preview</span>
+                      </div>
+                    </div>
+                  </div>
+                              
+                </div>
+              </div>
+
+            
+              <!-- Modal 1 -->
+              <div class="modal fade" id="pdfModal1" tabindex="-1" aria-labelledby="pdfModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content modal-content-certification">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="pdfModalLabel1">PDF Preview</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="./assets/images/ICT-first-certification.pdf"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="./assets/images/ICT-first-certification.pdf" download class="btn btn-download">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Modal 2 -->
+              <div class="modal fade" id="pdfModal2" tabindex="-1" aria-labelledby="pdfModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content modal-content-certification">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="pdfModalLabel2">PDF Preview</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="./assets/images/ICT-best-certification.pdf"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="./assets/images/ICT-best-certification.pdf" download class="btn btn-download">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal 3 -->
+              <div class="modal fade" id="pdfModal3" tabindex="-1" aria-labelledby="pdfModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content modal-content-certification">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="pdfModalLabel2">PDF Preview</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="./assets/images/ICT-firstage-certification.pdf"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="./assets/images/ICT-firstage-certification.pdf" download class="btn btn-download">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video Modal -->
+              <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content modal-content-certification">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="videoModalLabel">Video Preview</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/s25cSmC7vWA?rel=0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Big Data Industry and Education Project Implementation 
+                <span class="year">Feb.2022 - Jul.2022</span>
+              </h4>
+
+              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <div class="container mt-4">
+            <div class="row">
+              <!-- Certification Card 1 -->
+              <div class="col-md-6">
+                <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal1">
+                  <img src="./assets/images/python3-certification.png" alt="PDF Preview" class="card-img-top">
+                  <div class="certification-card-body">
+                    <h5 class="card-title">Programming Language - Python3</h5>
+                  </div>
+                  <div class="certification-card-footer">
+                    <span class="text-primary">Click to preview</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification Card 2 -->
+              <div class="col-md-6">
+                <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal2">
+                  <img src="./assets/images/python3-web-certification.jpg" alt="PDF Preview" class="card-img-top">
+                  <div class="certification-card-body">
+                    <h5 class="card-title">Web Data Extraction and Analysis</h5>
+                  </div>
+                  <div class="certification-card-footer">
+                    <span class="text-primary">Click to preview</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Modal 1 -->
+          <div class="modal fade" id="pdfModal1" tabindex="-1" aria-labelledby="pdfModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content modal-content-certification">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pdfModalLabel1">PDF Preview</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="./assets/images/python3-certification.pdf"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <a href="./assets/images/python3-certification.pdf" download class="btn btn-download">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Modal 2 -->
+          <div class="modal fade" id="pdfModal2" tabindex="-1" aria-labelledby="pdfModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content modal-content-certification">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pdfModalLabel2">PDF Preview</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="./assets/images/python3-certification.pdf"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <a href="./assets/images/python3-certification.pdf" download class="btn btn-download">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Language</h5>
+              </div>
+
+              <div>
+                <p class="icon-container"> 
+                  <a href="https://www.python.org" target="_blank"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> 
+                  </a>
+                  <a href="https://www.java.com/zh-TW/" target="_blank"> 
+                    <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="java" width="40" height="40"/> 
+                  </a>
+                  <a href="https://js.org/index.html" target="_blank"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png" alt="javascript" width="40" height="40"/> 
+                  </a>
+                  <a href="https://www.cprogramming.com/" target="_blank"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> 
+                  </a> 
+                  <a href="https://www.w3schools.com/cpp/" target="_blank"> 
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+                  </a> 
+                  <a href="https://www.php.net/" target="_blank"> 
+                    <img src="https://www.svgrepo.com/show/452088/php.svg" alt="php" width="40" height="40"/>
+                  </a> 
+                  <a href="https://zh.wikipedia.org/zh-tw/HTML" target="_blank"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" alt="html" width="40" height="40"/>
+                  </a> 
+                  <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1461px-CSS.3.svg.png" alt="css" width="40" height="40"/>
+                  </a> 
+                  
+                </p>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Systems, Tools & Software</h5>
+              </div>
+
+              <div>
+                <p class="icon-container"> 
+                  <a href="https://git-scm.com/" target="_blank"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png" alt="Git" width="40" height="40"/> 
+                  </a>
+                  <a href="https://www.docker.com/" target="_blank"> 
+                    <img src="https://i.pinimg.com/originals/5c/bb/a7/5cbba74b40ec0c0ce77b3db3ec1a5e05.png" alt="Docker" width="40" height="40"/> 
+                  </a>
+
+                  <a href="https://jupyter.org/" target="_blank"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="python" width="40" height="40"/> 
+                  </a>
+                  <a href="https://www.arduino.cc/" target="_blank"> 
+                    <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="reactnative" width="40" height="40"/> 
+                  </a>
+                  <a href="https://www.mysql.com/" target="_blank"> 
+                    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> 
+                  </a> 
+                  <a href="https://www.weka.io/" target="_blank"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDU7DPRjmol1Rzx7Ythk50MRUWloMQsw8Xtw&s" alt="weka" width="40" height="40"/> 
+                  </a> 
+                  <a href="https://www.knime.com/" target="_blank"> 
+                    <img src="https://www.datanami.com/wp-content/uploads/2023/11/knime-new-23.jpg" alt="knime" width="40" height="40"/> 
+                  </a> 
+                  <a href="https://www.r-project.org/" target="_blank"> 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/800px-R_logo.svg.png" alt="Rstudio" width="40" height="40"/> 
+                  </a> 
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+        
+  
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
