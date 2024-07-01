@@ -530,7 +530,7 @@ main {
 
 .about-text {
   color: var(--light-gray);
-  font-size: var(--fs-5);
+  font-size: var(--fs-4);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -590,7 +590,13 @@ main {
 
 .service-content-box { text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
+.service-item-title { 
+  margin-bottom: 7px; 
+  color: var(--main-gray);
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 1px 1px var(--lighter-gray);
+}
 
 .service-item-text {
   color: var(--light-gray);
@@ -1505,6 +1511,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about-text { 
     margin-bottom: 40px; 
     align-content:space-evenly;
+  }
+  
+  .aboutme-avatar-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0px, -25px);
+  background: var(--white);
+  border-radius: 14px; 
   }
 
   /* service */

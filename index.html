@@ -7,19 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chi-Chun Chen - Personal Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,15 +18,9 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- #SIDEBAR -->
 
     <aside class="sidebar" data-sidebar>
 
@@ -47,13 +32,11 @@
 
         <div class="info-content">
           <h1 class="name" title="Chi-Chun Chen">Chi-Chun Chen</h1>
-
           <p class="title">AI Alogorithm Engineer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -75,7 +58,6 @@
 
             <div class="contact-info">
               <p class="contact-title">Company</p>
-
               <a href="https://www.itri.org.tw/" class="contact-link">Industrial Technology<br>Research Institute</a>
             </div>
 
@@ -91,7 +73,6 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="77emilychen@gmail.com" class="contact-link">77emilychen@gmail<br>.com</a>
             </div>
 
@@ -107,7 +88,6 @@
 
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+886989597876" class="contact-link">+886-989597876</a>
             </div>
 
@@ -121,7 +101,6 @@
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Hshichu, Taiwan</address>
             </div>
 
@@ -161,15 +140,11 @@
 
 
 
-    <!--
-      - #main-content
-    -->
+    <!-- #main-content -->
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
+      <!-- #NAVBAR -->
 
       <nav class="navbar">
 
@@ -203,14 +178,16 @@
 
 
 
-      <!--
-        - #ABOUT
-      -->
+      <!-- #ABOUT -->
 
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">
+            <figure class="aboutme-avatar-box">
+              <img src="./assets/images/Advantures/my-pic-nobackground.png" alt="mypic" width="60" data-testimonials-avatar>
+            </figure>
+            About me</h2>
         </header>
 
         <section class="about-text">
@@ -237,13 +214,14 @@
         </section>
 
 
-        <!--
-          - service
-        -->
+        <!-- About/service -->
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">
+            
+            🎉🎉🎉 Good News!!!
+          </h3>
 
           <ul class="service-list">
 
@@ -255,10 +233,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">ICIP paper accepted!!!</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Our paper have been accepted by ICIP 2024, see you in Abu Dhabi!
                 </p>
               </div>
 
@@ -976,7 +954,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Class Project</button>
             </li>
 
             <li class="filter-item">
@@ -1008,7 +986,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Class Project</button>
               </li>
 
               <li class="select-item">
@@ -1026,14 +1004,14 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalLiaoYu">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/ProjectBackgrounds/LiaoYu.png" alt="finance" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">LiaoYu</h3>
@@ -1044,7 +1022,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalLiaoYu">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1054,14 +1032,14 @@
                   <img src="./assets/images/ProjectBackgrounds/project-2.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Taipei MRT Restaurant Recommendation</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Website</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="class Project">
               <a href="#">
 
                 <figure class="project-img">
@@ -1072,9 +1050,9 @@
                   <img src="./assets/images/ProjectBackgrounds/project-3.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">House Price Prediction System</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Visual Basic System</p>
 
               </a>
             </li>
@@ -1087,17 +1065,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/ProjectBackgrounds/project-4.png" alt="incomepredict" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Income Prediction System</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Data Mining</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="class project">
               <a href="#">
 
                 <figure class="project-img">
@@ -1115,7 +1093,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="class project">
               <a href="#">
 
                 <figure class="project-img">
@@ -1188,6 +1166,28 @@
             </li>
 
           </ul>
+
+          <!-- Project Modal 1 -->
+          <div class="modal fade" id="projectModalLiaoYu" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="projectModalLabel1">LiaoYu Project Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <img src="./assets/images/ProjectBackgrounds/LiaoYu.png" class="card-img-top" alt="LiaoYu">
+                    <div class="card-body">
+                      <h5 class="card-title">LiaoYu</h5>
+                      <p class="card-text">Chatbot - LLM, LIWC, IOS, Android</p>
+                      <p class="card-text">Detailed description of the project, including features, technologies used, and other relevant information.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </section>
 
