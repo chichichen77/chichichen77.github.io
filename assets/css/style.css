@@ -930,6 +930,7 @@ main {
   background-color: var(--white) !important;
 }
 
+
 .btn-download {
   background-color: var(--main-blue); /* 设置下载按钮的背景颜色 */
   color: var(--white); /* 设置按钮文字颜色为白色 */
@@ -1156,100 +1157,106 @@ main {
 /*-----------------------------------*\
   #PROJECT CARDS
 \*-----------------------------------*/
-.project-card-body {
-  padding: 10px;
-  color: var(--main-gray) !important;
-  font-size: var(--fs-7) !important;
-}
 
+.project-modal-content{
+  border-radius: 15px;
+  background: var(--bg-gradient-onyx);
+  border: none;
+}
+.project-modal-body{
+  border: none;
+  margin: 10px;
+}
 
 /*-----------------------------------*\
-  #BLOG
+  #PROJECT APP CARDS
 \*-----------------------------------*/
-
-.blog-posts { margin-bottom: 10px; }
-
-.blog-posts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.blog-post-item > a {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  height: 100%;
-  box-shadow: var(--shadow-4);
-  border-radius: 16px;
-  z-index: 1;
-}
-
-.blog-post-item > a::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: var(--white);
-  z-index: -1;
-}
-
-.blog-banner-box {
-  width: 100%;
-  height: 200px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.blog-banner-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transition-1);
-}
-
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
-
-.blog-content { padding: 15px; }
-
-.blog-meta {
+.card-container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 7px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* 确保卡片在同一行 */
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.app-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card {
+  background: #FFEEDD;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  width: 220px;
+  height: 400px;;
+}
+.card:hover{
+  background: var(--emphasize);
+  color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(47, 46, 46, 0.1);
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  width: 220px;
+  height: 400px;;
+}
+
+.app-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.card-img{
+  object-fit: fill;
+}
+
+.card-body, .app-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-body h5, .app-body h5 {
+  font-size: 18px;
+  color: #333;
   margin-bottom: 10px;
 }
 
-.blog-meta :is(.blog-category, time) {
-  color: var(--main-blue);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+.card-body p, .app-body p {
+  font-size: 14px;
+  color: #666;
 }
 
-.blog-meta .dot {
-  background: var(--main-blue);
-  width: 4px;
-  height: 4px;
-  border-radius: 4px;
+.app-body p {
+  font-size: 16px;
 }
 
-.blog-item-title {
-  margin-bottom: 10px;
-  line-height: 1.3;
-  transition: var(--transition-1);
+.related-reports {
+  margin-bottom: 50px;
 }
 
-.blog-post-item > a:hover .blog-item-title { color: var(--emphasize); }
-
-.blog-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
+.app-download {
+  margin-bottom: 50px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
