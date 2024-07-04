@@ -82,7 +82,7 @@
   --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
-  --fs-1: 24px;
+  --fs-1: 26px;
   --fs-2: 18px;
   --fs-3: 17px;
   --fs-4: 16px;
@@ -259,7 +259,9 @@ article.active {
 
 .article-title {
   position: relative;
-  padding-bottom: 7px;
+  font-weight: var(--fw-600);
+  padding-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .article-title::after {
@@ -267,8 +269,8 @@ article.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30px;
-  height: 3px;
+  width: 60px;
+  height: 4px;
   background: var(--text-gradient-bule);
   border-radius: 3px;
 }
@@ -530,8 +532,6 @@ main {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-
-.about .article-title { margin-bottom: 15px; }
 
 .about-text {
   color: var(--light-gray);
@@ -818,8 +818,6 @@ main {
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
-
-.article-title { margin-bottom: 30px; }
 
 
 /**
@@ -1434,16 +1432,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  .article-title {
-    font-weight: var(--fw-600);
-    padding-bottom: 15px;
-  }
-
-  .article-title::after {
-    width: 40px;
-    height: 5px;
-  }
-
   .icon-box {
     width: 48px;
     height: 48px;
@@ -1525,22 +1513,30 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #ABOUT
    */
-
-  .about .article-title { margin-bottom: 20px; }
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
 
   .about-text { 
     margin-bottom: 40px; 
-    align-content:space-evenly;
+    align-content: space-evenly;
   }
   
   .aboutme-avatar-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(0px, -25px);
-  background: var(--white);
-  border-radius: 14px; 
+    position: relative; /* 改为 relative 以便与标题并排 */
+    transform: translate(0, 0); /* 移除 transform */
+    background: rgba(6, 6, 6, 0);
+    border-radius: 14px; 
+    margin-right: 10px; /* 增加右边距使标题与图片有间距 */
+    margin-bottom: 20px; /* 移除 margin-bottom */
+
   }
+  
+  .aboutme-avatar-box img {
+    display: block; /* 确保图片占据整个 figure 元素 */
+  }
+  
 
   /* service */
 
@@ -1774,8 +1770,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * PORTFOLIO
    */
-
-  .article-title { padding-bottom: 20px; }
 
   .filter-select-box { display: none; }
 
