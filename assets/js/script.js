@@ -16,8 +16,8 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+// update variables
+const updateItem = document.querySelectorAll("[data-update-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
@@ -28,30 +28,30 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
-const testimonialsModalFunc = function () {
+const updateModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
 
 // add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
+for (let i = 0; i < updateItem.length; i++) {
 
-  testimonialsItem[i].addEventListener("click", function () {
+  updateItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    modalImg.src = this.querySelector("[data-update-avatar]").src;
+    modalImg.alt = this.querySelector("[data-update-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-update-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-update-text]").innerHTML;
 
-    testimonialsModalFunc();
+    updateModalFunc();
 
   });
 
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+modalCloseBtn.addEventListener("click", updateModalFunc);
+overlay.addEventListener("click", updateModalFunc);
 
 
 
@@ -137,6 +137,7 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
+const resumeButton = document.querySelector(".btn-to-resume");
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
@@ -154,4 +155,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+}
+
+// add event to resume button
+resumeButton.addEventListener("click", function () {
+  for (let i = 0; i < pages.length; i++) {
+    if (pages[i].dataset.page === "resume") {
+      pages[i].classList.add("active");
+      window.scrollTo(0, 0);
+    } else {
+      pages[i].classList.remove("active");
+    }
+  }
+});
+
+function showPDFPreview() {
+  document.getElementById('pdfPreviewModal').style.display = 'block';
+}
+
+function closePDFPreview() {
+  document.getElementById('pdfPreviewModal').style.display = 'none';
 }

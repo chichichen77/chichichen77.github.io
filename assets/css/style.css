@@ -52,7 +52,7 @@
     hsl(56, 100%, 86%), 
     hsl(337, 100%, 91%)
   );
-  --testimonials-card:hsl(0, 0%, 100%);
+  --update-card:hsl(0, 0%, 100%);
   --scrollbar-background:hsl(204, 8%, 86%);
   --scrollbar-front:hsl(204, 70%, 53%);
   --contact-title:hsl(204, 70%, 53%);
@@ -65,7 +65,7 @@
   --blue-green:#0abab5;
   --bright-yellow:#ffcc00;
   --white:hsl(0, 0%, 100%);
-  --service-background:hsl(0, 0%, 100%);
+  --downloadapp-background:hsl(0, 0%, 100%);
   --backbackground-color:hsl(0, 0%, 100%);
 
   --main-gray: hsl(248, 0%, 20%); /* 大大標題 */
@@ -308,7 +308,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--testimonials-card);
+  background: var(--update-card);
   border-radius: inherit;
   z-index: -1;
 }
@@ -557,21 +557,44 @@ main {
   color: var(--emphasize);
 }
 
+.btn-to-resume {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--time-line-shadow);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-to-resume ion-icon {
+  margin-left: 5px;
+}
+
+.btn-to-resume:hover {
+  background-color: var(--emphasize);
+  transform: scale(1.1);
+}
+
 /**
- * #service 
+ * #downloadapp 
  */
 
-.service { margin-bottom: 35px; }
+.downloadapp { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 20px; }
+.downloadapp-title { margin-bottom: 20px; }
 
-.service-list {
+.downloadapp-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.service-item {
+.downloadapp-item {
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
@@ -580,22 +603,22 @@ main {
   z-index: 1;
 }
 
-.service-item::before {
+.downloadapp-item::before {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--service-background);
+  background: var(--downloadapp-background);
   border-radius: inherit;
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.downloadapp-icon-box { margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.downloadapp-icon-box img { margin: auto; }
 
-.service-content-box { text-align: center; }
+.downloadapp-content-box { text-align: center; }
 
-.service-item-title { 
+.downloadapp-item-title { 
   margin-bottom: 7px; 
   color: var(--main-gray);
   font-weight: 600;
@@ -603,7 +626,7 @@ main {
   text-shadow: 1px 1px var(--lighter-gray);
 }
 
-.service-item-text {
+.downloadapp-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
@@ -612,14 +635,14 @@ main {
 
 
 /**
- * #testimonials 
+ * #update 
  */
 
-.testimonials { margin-bottom: 30px; }
+.update { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.update-title { margin-bottom: 20px; }
 
-.testimonials-list {
+.update-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -633,24 +656,26 @@ main {
   scroll-snap-type: inline mandatory;
 }
 
-.testimonials-item {
+.update-item {
   min-width: 100%;
   scroll-snap-align: center;
 }
 
-.testimonials-avatar-box {
+.update-avatar-box {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(15px, -25px);
   background: var(--white);
-  border-radius: 14px;
+  border-radius: 30px;
   box-shadow: var(--shadow-1);
 }
+.update-avatar-box img{
+  border-radius: 30px;
+}
+.update-item-title { margin-bottom: 7px; }
 
-.testimonials-item-title { margin-bottom: 7px; }
-
-.testimonials-text {
+.update-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -664,7 +689,7 @@ main {
 
 
 /**
- * #testimonials-modal
+ * #update-modal
  */
 
 .modal-container {
@@ -710,7 +735,7 @@ main {
   pointer-events: all;
 }
 
-.testimonials-modal {
+.update-modal {
   background: var(--bg-gradient-onyx);
   position: relative;
   padding: 15px;
@@ -724,7 +749,7 @@ main {
   z-index: 2;
 }
 
-.modal-container.active .testimonials-modal {
+.modal-container.active .update-modal {
   transform: scale(1);
   opacity: 1;
 }
@@ -776,14 +801,42 @@ main {
   line-height: 1.6;
 }
 
+.modal-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-avatar-box {
+  border-radius: 18px;
+  margin-bottom: 0;
+}
+
+.modal-avatar-box img { 
+  width: 65px; 
+  border-radius: 30px;
+}
+
+
+.modal-img-wrapper > img {
+  display: block;
+  flex-grow: 1;
+  width: 35px;
+}
+.modal-content{
+  border-radius: 15px;
+  background-color: var(--bg-gradient-onyx);
+  border: none;
+}
+
 
 /**
- * #clients 
+ * #lifestyle 
  */
 
-.clients { margin-bottom: 15px; }
+.lifestyle { margin-bottom: 15px; }
 
-.clients-list {
+.lifestyle-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -798,18 +851,18 @@ main {
   scroll-padding-inline: 25px;
 }
 
-.clients-item {
+.lifestyle-item {
   min-width: 50%;
   scroll-snap-align: start;
 }
 
-.clients-item img {
+.lifestyle-item img {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.lifestyle-item img:hover { filter: grayscale(0); }
 
 
 
@@ -900,6 +953,33 @@ main {
   text-decoration:none;
 }
 
+.btn-download-container {
+  text-align: right; 
+  margin-bottom: -10px;
+}
+
+.btn-download-primary {
+  display: inline-flex;;
+  align-items: center;
+  padding: 10px 13px;
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--main-blue);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-download-primary ion-icon {
+  margin-right: 5px;
+}
+
+.btn-download-primary:hover {
+  background-color: var(--emphasize);
+  color: var(--white);
+}
 
 .certification-card {
   border-radius: 15px;
@@ -926,6 +1006,7 @@ main {
 .modal-content-certification{
   border-radius: 15px;
   background-color: var(--white) !important;
+  background: var(--white);
 }
 
 
@@ -943,6 +1024,31 @@ main {
   width: 100%;
   height: 500px;
   border: none;
+}
+
+.modal-fjcu-img-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+  overflow: hidden;
+}
+
+.modal-fjcu-img-ifame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.modal-fjcu-img-ifame img {
+  width: 30%;
+  height: 200%;
+  object-fit: contain; /* Adjust this as needed */
+  display: flex;
+  position: relative;
 }
 
 .modal-lg.custom-modal-lg {
@@ -1386,7 +1492,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .lifestyle-item { min-width: calc(33.33% - 10px); }
 
 
 
@@ -1531,6 +1637,35 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 40px; 
     align-content: space-evenly;
   }
+
+  .centered-button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-to-resume {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--time-line-shadow);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .btn-to-resume ion-icon {
+    margin-left: 5px;
+  }
+  
+  .btn-to-resume:hover {
+    background-color: var(--emphasize);
+    transform: scale(1.1);
+  }
   
   .aboutme-avatar-box {
     position: relative; /* 改为 relative 以便与标题并排 */
@@ -1547,9 +1682,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
   
 
-  /* service */
+  /* downloadapp */
 
-  .service-item {
+  .downloadapp-item {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1557,18 +1692,18 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  .service-icon-box {
+  .downloadapp-icon-box {
     margin-bottom: 0;
     margin-top: 5px;
   }
 
-  .service-content-box { text-align: left; }
+  .downloadapp-content-box { text-align: left; }
 
-  /* testimonials */
+  /* update */
 
-  .testimonials-title { margin-bottom: 25px; }
+  .update-title { margin-bottom: 25px; }
 
-  .testimonials-list {
+  .update-list {
     gap: 30px;
     margin: 0 -30px;
     padding: 30px;
@@ -1580,28 +1715,28 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 25px;
   }
 
-  .testimonials-avatar-box {
+  .update-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .update-avatar-box img { width: 80px; }
 
-  .testimonials-item-title {
+  .update-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
   }
 
-  .testimonials-text {
+  .update-text {
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
+  /* update modal */
 
   .modal-container { padding: 20px; }
 
-  .testimonials-modal {
+  .update-modal {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -1621,7 +1756,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
   }
 
-  .modal-avatar-box img { width: 65px; }
+  .modal-avatar-box img { 
+    width: 65px; 
+    border-radius: 30px;
+  }
+
 
   .modal-img-wrapper > img {
     display: block;
@@ -1633,16 +1772,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     background-color: var(--bg-gradient-onyx);
     border: none;
   }
-  /* clients */
+  /* lifestyle */
 
-  .clients-list {
+  .lifestyle-list {
     gap: 50px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .lifestyle-item { min-width: calc(33.33% - 35px); }
 
 
 
@@ -1765,9 +1904,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
-  /* testimonials modal */
+  /* update modal */
 
-  .testimonials-modal {
+  .update-modal {
     gap: 35px;
     max-width: 680px;
   }
@@ -1902,20 +2041,20 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
-  /* service */
+  /* downloadapp */
 
-  .service-list {
+  .downloadapp-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
 
-  /* testimonials */
+  /* update */
 
-  .testimonials-item { min-width: calc(50% - 15px); }
+  .update-item { min-width: calc(50% - 15px); }
 
-  /* clients */
+  /* lifestyle */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  .lifestyle-item { min-width: calc(25% - 38px); }
 
 
 

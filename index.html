@@ -13,7 +13,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -27,7 +28,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="Chi-Chun Chen" width="80">
+          <img src="./assets/images/Advatar/my-avatar.jpg" alt="Chi-Chun Chen" width="80">
         </figure>
 
         <div class="info-content">
@@ -43,26 +44,25 @@
       </div>
 
       <div class="sidebar-info_more">
-
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
+          <!-- silder info 1: company -->
           <li class="contact-item">
 
             <div class="icon-box">
-              <a href="https://github.com/your-profile" target="_blank">
+              <a href="https://www.itri.org.tw/" target="_blank">
                 <ion-icon name="business-outline"></ion-icon>
               </a>
             </div>
 
             <div class="contact-info">
               <p class="contact-title">Company</p>
-              <a href="https://www.itri.org.tw/" class="contact-link">Industrial Technology<br>Research Institute</a>
+              <a href="https://www.itri.org.tw/" class="contact-link" target="_blank">Industrial Technology<br>Research Institute</a>
             </div>
 
           </li>
-
+          <!-- silder info 2: email -->
           <li class="contact-item">
 
             <div class="icon-box">
@@ -77,7 +77,7 @@
             </div>
 
           </li>
-
+          <!-- silder info 3: phone -->
           <li class="contact-item">
 
             <div class="icon-box">
@@ -92,7 +92,7 @@
             </div>
 
           </li>
-
+          <!-- silder info 4: location -->
           <li class="contact-item">
 
             <div class="icon-box">
@@ -138,8 +138,6 @@
 
 
 
-
-
     <!-- #main-content -->
 
     <div class="main-content">
@@ -170,18 +168,16 @@
 
       </nav>
 
-
-
-
-
-      <!-- #ABOUT -->
+      <!-- 
+        - #ABOUT
+      -->
 
       <article class="about  active" data-page="about">
 
         <header>
           <div class="header-content">
             <figure class="aboutme-avatar-box">
-              <img src="./assets/images/Advatar/my-pic-nobackground2.PNG" alt="mypic" width="60" data-testimonials-avatar>
+              <img src="./assets/images/Advatar/my-pic-nobackground_title.PNG" alt="mypic" width="60" data-update-avatar>
             </figure>
             <h2 class="h2 article-title">About me</h2>
           </div>
@@ -208,202 +204,74 @@
               vision</b> and <b class="highlight">large language models (LLM)</b>. <br>
             I also have experience as a data science intern. I welcome discussions on related research topics!
           </p>
+
+          <section class="centered-button-section">
+            <button class="btn-to-resume" onclick="location.href='#resume'">
+              Go to Resume
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </section>
+
         </section>
 
+        
 
-        <!-- About/service -->
 
-        <section class="service">
+         <!-- ##Updates & Achievements -->
+        <section class="update">
 
-          <h3 class="h3 service-title">
-            
-            🎉🎉🎉 Good News!!!
+          <h3 class="h3 update-title">
+            🎉🎉🎉 Updates & Achievements!!!
           </h3>
 
-          <ul class="service-list">
+          <ul class="update-list has-scrollbar">
 
-            <li class="service-item">
+            <li class="update-item">
+              <div class="content-card" data-update-item>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/Icons/icon-design.svg
-                " alt="design icon" width="40">
+                <figure class="update-avatar-box">
+                  <img src="./assets/images/About/ICIP-icon.PNG" alt="ICIP-icon" width="60" data-update-avatar>
+                </figure>
+
+                <h4 class="h4 update-item-title" data-update-title>ICIP Paper accepted!!!</h4>
+
+                <div class="update-text" data-update-text>
+                  <p>
+                    Our paper has been accepted by ICIP 2024, see you in Abu Dhabi!
+                  </p>
+                </div>
+
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">ICIP paper accepted!!!</h4>
-
-                <p class="service-item-text">
-                  Our paper has been accepted by ICIP 2024, see you in Abu Dhabi!
-                </p>
-              </div>
-
             </li>
 
-            <li class="service-item">
+            <li class="update-item">
+              <div class="content-card" data-update-item>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/Icons/icon-dev.svg" alt="Web development icon" width="40">
+                <figure class="update-avatar-box">
+                  <img src="./assets/images/About/ICIP-icon.PNG" alt="ICIP-icon" width="60" data-update-avatar>
+                </figure>
+
+                <h4 class="h4 update-item-title" data-update-title>ICIP Paper accepted!!!</h4>
+
+                <div class="update-text" data-update-text>
+                  <p>
+                    Our paper has been accepted by ICIP 2024, see you in Abu Dhabi!
+                  </p>
+                </div>
+
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Icons/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Icons/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
           </ul>
 
         </section>
 
 
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Advatar/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Advatar/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Advatar/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/Advatar/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
+        <!-- ##Updates & Achievements modal -->
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
+          <section class="update-modal">
 
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
@@ -411,10 +279,8 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/Advatar/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/About/ICIP-icon.PNG" alt="Daniel lewis" width="80" data-modal-img>
               </figure>
-
-              <img src="./assets/images/Icons/icon-quote.svg" alt="quote icon">
             </div>
 
             <div class="modal-content">
@@ -425,11 +291,7 @@
 
               <div data-modal-text>
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  Paperaccept
                 </p>
               </div>
 
@@ -439,50 +301,62 @@
 
         </div>
 
+        <!-- ##Download My App -->
+        <section class="downloadapp">
 
-        <!--
-          - clients
-        -->
+          <h3 class="h3 downloadapp-title">
+            📥 Download My App.
+          </h3>
 
-        <section class="clients">
+          <ul class="downloadapp-list">
 
-          <h3 class="h3 clients-title">Life Style</h3>
+            <li class="downloadapp-item">
 
-          <ul class="clients-list has-scrollbar">
+              <div class="downloadapp-icon-box">
+                <img src="./assets/images/About/Download-LiaoYu-logo.png" alt="design icon" width="40">
+              </div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Logos/logo-1-color.png" alt="client logo">
-              </a>
+              <div class="downloadapp-content-box">
+                <h4 class="h4 downloadapp-item-title">iaoYu - IOS download.</h4>
+
+                <p class="downloadapp-item-text">
+                  ...
+                </p>
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Logos/logo-2-color.png" alt="client logo">
-              </a>
+            <li class="downloadapp-item">
+
+              <div class="downloadapp-icon-box">
+                <img src="./assets/images/About/Download-LiaoYu-logo.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="downloadapp-content-box">
+                <h4 class="h4 service-item-title">LiaoYu - GooglePlay download.</h4>
+
+                <p class="downloadapp-item-text">
+                  ...
+                </p>
+              </div>
+
             </li>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Logos/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+          </ul>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Logos/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+        </section>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/Logos/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
 
-            <li class="clients-item">
+        <!-- ##Life Style -->
+        <section class="lifestyle">
+
+          <h3 class="h3 lifestyle-title">🏖️ Life Style</h3>
+
+          <ul class="lifestyle-list has-scrollbar">
+
+            <li class="lifestyle-item">
               <a href="#">
-                <img src="./assets/images/Logos/logo-6-color.png" alt="client logo">
+                <img src="./assets/images/About/LifeStyle-winnie.png" alt="winnie logo">
               </a>
             </li>
 
@@ -493,28 +367,48 @@
       </article>
 
 
-
-
-
       <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="resume" id="resume">
 
         <header>
           <div class="header-content">
             <figure class="aboutme-avatar-box">
-              <img src="./assets/images/Advatar/my-pic-nobackground2.PNG" alt="mypic" width="60" data-testimonials-avatar>
+              <img src="./assets/images/Advatar/my-pic-nobackground_title.PNG" alt="mypic" width="60" data-update-avatar>
             </figure>
             <h2 class="h2 article-title">Resume</h2>
           </div>
         </header>
-        <!-- <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header> -->
 
-        <!--Education-->
+        <div class="btn-download-container">
+          <button class="btn btn-download-primary" data-bs-toggle="modal" data-bs-target="#pdfModalresume">
+            <ion-icon name="download-outline"></ion-icon>
+            Download Resume
+          </button>
+        </div>
+      
+        <!-- PDF Preview Modal -->
+        <div class="modal fade" id="pdfModalresume" tabindex="-1" aria-labelledby="pdfModalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-content-certification">
+              <div class="modal-header">
+                <h5 class="modal-title" id="pdfModalLabel1">PDF Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <iframe src="./assets/images/Resume/chichuns_resume_20240706.pdf" width="100%" height="500px"></iframe>
+              </div>
+              <div class="modal-footer">
+                <a href="./assets/images/Resume/chichuns_resume_20240706.pdf" download class="btn btn-download">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ##Education-->
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -567,12 +461,12 @@
 
         </section>
 
-        <!--Work Experience-->
+        <!-- ##Work Experience-->
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Work Experience</h3>
@@ -583,12 +477,18 @@
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">
-                AI Alogorithm Assistant Engineer
+                AI Algorithm Assistant Engineer
                 <span class="year">Mar.2024 - Aug.2024</span>
               </h4>
 
-              <span>Industrial Technology Research Institute</span>
-              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+              <span>
+                Industrial Technology Research Institute
+              </span>
+
+              <a href="#" class="see-more" data-bs-toggle="modal" data-bs-target="#AI_algorithm_engineer">
+                See more details 
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
 
             </li>
 
@@ -599,8 +499,14 @@
                 <span class="year">May.2023 - Sep.2023</span>
               </h4>
 
-              <span>Industrial Technology Research Institute</span>
-              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+              <span>
+                Industrial Technology Research Institute
+              </span>
+
+              <a href="#" class="see-more" data-bs-toggle="modal" data-bs-target="#data_scientist_intern">
+                See more details 
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
 
             </li>
 
@@ -608,7 +514,124 @@
 
         </section>
 
-        <!--Work Experience-->
+
+        <!-- ##Work Experience-->
+        <section class="timeline">
+
+          
+
+          <!-- AI Algorithm engineer -->
+          <div class="modal fade" id="AI_algorithm_engineer" tabindex="-1" aria-labelledby="AI_algorithm_engineer" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content modal-content-certification">
+
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="AI_algorithm_engineer">projectModalHousePrice Details</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                      <div class="card">
+                      <img src="./assets/images/ProjectBackgrounds/LiaoYu.png" class="card-img-top" alt="LiaoYu">
+                      <div class="project-card-body">
+                          <h5 class="card-title">Chatbot APP Download Link</h5>
+                          <p class="card-text">Chatbot - LLM, LIWC, IOS, Android</p>
+                          <p class="card-text">Detailed description of the project, including features, technologies used, and other relevant information.</p>
+                      </div>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+
+          <!-- Data Scientist intern -->
+          <div class="modal fade" id="data_scientist_intern" tabindex="-1" aria-labelledby="data_scientist_intern" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content project-modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="data_scientist_intern">LiaoYu Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="project-modal-body">
+        
+                  <!-- 我要加資料在這裡 -->
+                  <section class="app-download">
+                    <h5>📥 Chatbot APP Download Link</h5>
+                    <div class="app-container">
+
+                      <a href="https://apps.apple.com/tw/app/%E8%81%8A%E7%99%92%E7%99%82%E9%AC%B1liaoyu/id1641870874" target="_blank">
+                        <div class="app-card">
+                            <img src="./assets/images/ProjectBackgrounds/LiaoYu-logo.png" alt="App Store" class="app-img">
+                            <div class="app-body">
+                            <h5>聊癒療鬱LiaoYu</h5>
+                            <p>全</p>
+                        </div>
+                      </a>
+                      
+                      <div class="app-card">
+                        <img src="./assets/images/ProjectBackgrounds/LiaoYu-logo.png" alt="Google Play" class="app-img">
+                        <div class="app-body">
+                          <h5>聊癒療鬱器人在聊天過程中會適時的關心您的情緒狀況及給予安慰！就像您的朋友！</h5>
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+                  
+                  <section class="related-reports">
+                    
+                    <h5>Related reports</h5>
+
+                    <!-- Report1 -->
+                    <a href="https://unews.nccu.edu.tw/unews/%EF%BC%88%EF%BD%86%EF%BC%89%E8%BC%94%E5%A4%A7%EF%BC%BF%E8%81%8A%E7%99%92%E7%99%82%E9%AC%B1%EF%BC%88%E8%AA%9E%E8%A8%80%E9%A2%A8%E6%A0%BC%E3%80%81mbti%E3%80%81%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8/" target="_blank">
+                      <div class="card-container">
+                        <div class="card">
+                          
+                          <img src="./assets/images/ProjectBackgrounds/NCCUreport.jpg" alt="National Chengchi University Newspaper" class="card-img">
+                          
+                          <div class="card-body">
+                              <h5>National Chengchi University Newspaper</h5>
+                              <p>Chatbot APP Download Link</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                    <!-- Report2 -->
+                    <a href="https://www.management.fju.edu.tw/" target="_blank">
+                      <div class="card">
+                          <img src="./assets/images/ProjectBackgrounds/Managementreport.jpeg" alt="College of Management, Fu Jen Catholic University" class="card-img">
+                          <div class="card-body">
+                            <h5>College of Management, Fu Jen Catholic University</h5>
+                            <p>Description</p>
+                          </div>
+                      </div>
+                    </a>
+                    <!-- Report3 -->
+                    <a href="http://www.stat.fju.edu.tw/tw/news/detail/393" target="_blank">
+                      <div class="card">
+                          <img src="./assets/images/ProjectBackgrounds/SISreport.png" alt="Department of Statistics and Informatics, Fu Jen Catholic University" class="card-img">
+                          <div class="card-body">
+                            <h5>Department of Statistics and Informatics, Fu Jen Catholic University</h5>
+                            <p>News - "2022大專校"</p>
+                          </div>
+                      </div>
+                    </a>
+                    
+                  </section>
+        
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ##Compitions And Papers-->
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -616,21 +639,26 @@
               <ion-icon name="trophy-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Compitions and Projects</h3>
+            <h3 class="h3">Compitions and Papers</h3>
           </div>
 
           <ol class="timeline-list">
-
+            <!--
+              ICIP Paper
+            -->
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">
-                Certificate of Academic Excellence College of Management FJCU
-                <span class="year">Dec.2022</span>
+                Paper accepted by ICIP 2024
+                <span class="year">Jun.2024</span>
               </h4>
 
               <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
             </li>
 
+            <!--
+              International ICT Innovative Services Awards 2022
+            -->
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">
@@ -647,45 +675,49 @@
               
               <div class="container mt-4">
                 <div class="row">
-                  <!-- Certification Card 1 -->
+
+                  <!-- Certification Card 1 - First -->
                   <div class="col-md-6">
                     <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal1">
-                      <img src="./assets/images/Certifications/first.png" alt="PDF Preview" class="card-img-top">
+                      <img src="./assets/images/Resume/Compitions/ICT/ICT-first-certification-resized.png" alt="PDF Preview" class="card-img-top">
                       <div class="certification-card-footer">
                         <span class="text-primary">Click to preview Firdt Place Award!</span>
                       </div>
                     </div>
                   </div>
-                  <!-- Certification Card 2 -->
+
+                  <!-- Certification Card 2 - Best -->
                   <div class="col-md-6">
                     <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal2">
-                      <img src="./assets/images/Certifications/best.png" alt="PDF Preview" class="card-img-top">
+                      <img src="./assets/images/Resume/Compitions/ICT/ICT-best-certification-resized.png" alt="PDF Preview" class="card-img-top">
                       <div class="certification-card-footer">
                         <span class="text-primary">Click to preview Best Popularity Award!</span>
                       </div>
                     </div>
                   </div>
-                  <!-- Certification Card 3 -->
+
+                  <!-- Certification Card 3 - first stage -->
                   <div class="col-md-6">
                     <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal3">
-                      <img src="./assets/images/Certifications/resized_ok.png" alt="PDF Preview" class="card-img-top">
+                      <img src="./assets/images/Resume/Compitions/ICT/ICT-firstage-certification-resized.png" alt="PDF Preview" class="card-img-top">
                       <div class="certification-card-footer">
                         <span class="text-primary">Click to preview</span>
                       </div>
                     </div>
                   </div>
+
                   <!-- Video Modal -->
                   <div class="col-md-6">
                     <div class="certification-card" data-bs-toggle="modal" data-bs-target="#videoModal">
-                      <img src="./assets/images/Certifications/ICT-movie.png" alt="Video Preview" class="card-img-top">
+                      <img src="/assets/images/Resume/Compitions/ICT/ICT-movie.png" alt="Video Preview" class="card-img-top">
                       <div class="certification-card-footer">
                         <span class="text-primary">Click to preview</span>
                       </div>
                     </div>
                   </div>
                               
-                </div>
-              </div>
+                </div> <!--end of row-->
+              </div> <!--end of container-->
 
             
               <!-- Modal 1 -->
@@ -697,10 +729,10 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <iframe src="./assets/images/Certifications/ICT-first-certification.pdf"></iframe>
+                      <iframe src="./assets/images/Resume/Compitions/ICT/ICT-first-certification.pdf"></iframe>
                     </div>
                     <div class="modal-footer">
-                      <a href="./assets/images/Certifications/ICT-first-certification.pdf" download class="btn btn-download">Download</a>
+                      <a href="./assets/images/Resume/Compitions/ICT/ICT-first-certification.pdf" download class="btn btn-download">Download</a>
                     </div>
                   </div>
                 </div>
@@ -715,10 +747,10 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <iframe src="./assets/images/Certifications/ICT-best-certification.pdf"></iframe>
+                      <iframe src="./assets/images/Resume/Compitions/ICT/ICT-best-certification.pdf"></iframe>
                     </div>
                     <div class="modal-footer">
-                      <a href="./assets/images/Certifications/ICT-best-certification.pdf" download class="btn btn-download">Download</a>
+                      <a href="./assets/images/Resume/Compitions/ICT/ICT-best-certification.pdf" download class="btn btn-download">Download</a>
                     </div>
                   </div>
                 </div>
@@ -733,10 +765,10 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <iframe src="./assets/images/Certifications/ICT-firstage-certification.pdf"></iframe>
+                      <iframe src="./assets/images/Resume/Compitions/ICT/ICT-firstage-certification.pdf"></iframe>
                     </div>
                     <div class="modal-footer">
-                      <a href="./assets/images/Certifications/ICT-firstage-certification.pdf" download class="btn btn-download">Download</a>
+                      <a href="./assets/images/Resume/Compitions/ICT/ICT-firstage-certification.pdf" download class="btn btn-download">Download</a>
                     </div>
                   </div>
                 </div>
@@ -759,37 +791,61 @@
                 </div>
               </div>
 
-              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
+              <!-- ICT details Modal -->
+              <div class="modal fade" id="ICTdetailsModal" tabindex="-1" aria-labelledby="ICTdetailsModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg custom-modal-lg">
+                  <div class="modal-content modal-content-certification">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="videoModalLabel">International ICT Innovative Services Awards 2022</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <p>
+                          In a fast-paced society, it isn't easy to find good friends, so this research aims to create a chatbot exclusive to the user. Unlike common chatbots or dating apps on the market, our research's chatbot, the Language Style of Chatbot, reply's sentences will be converted through the "Language Style Model" . This model is innovatively created by this research. The language style of the chatbot will be conformed to the user's preference, and the reply will instantly break the time limit. The "Language Style Model" combining N-gram, Sentence Deconstruction model, and Word2FunctionVector. The sentence deconstruction model and Word2FunctionVector were innovatively established for this research. Its functions are briefly described below:<br>
+                          1.Sentence deconstruction model: Its function is to learn the language style of an author. Its operation process first is to segment the author's article into sentences and words, then convert the terms according to the part of speech, and finally record them in the model.<br>
+                          2.Word2FunctionVector: Similar to the usage of Word2Vec, it can convert a set of words into a set of vector spaces to express their semantic meaning, and the vector space given to terms by Word2FunctionVector can better represent their usage. For example, the words "I" and "you" have different meanings, and their parts of speech are personal pronouns, and their use is very similar. For example, "I am delighted" and "You are pleased" both express that someone is happy, but the words of this two sentences are not the same. In this case, the vectors assigned to the two words by Word2FunctionVector will be similar verse with the vector given by Word2Vec. <br>
+                          Also, our research can use the MBTI test and three-stage multiple-choice questions to customize a user-specific chatbot. The options in the three-stage multiple-choice questions are all sentences transformed by the Language Style Model. The Language Style Model improves the problem of standardized responses of chatbots on the market and better meet user preferences to create their chatbots.<br>
+                        </p>
+                      </div>
+                      <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/s25cSmC7vWA?rel=0" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            </li>
+              <a href="#" class="see-more" data-bs-toggle="modal" data-bs-target="#ICTdetailsModal">
+                See more details 
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </a>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">
-                Big Data Industry and Education Project Implementation 
-                <span class="year">Feb.2022 - Jul.2022</span>
-              </h4>
-
-              <a href="#" class="see-more">See more details <ion-icon name="arrow-forward-outline"></ion-icon></a>
             </li>
 
           </ol>
 
         </section>
 
-        <!--Compitions and Projects-->
+        <!-- 
+          Certification
+        -->
         <section class="timeline">
 
           <div class="title-wrapper">
-            <h3 class="h3">Certifications</h3>
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certificates</h3>
           </div>
 
           <div class="container mt-4">
             <div class="row">
-              <!-- Certification Card 1 -->
+              <!-- Certification Python 1 -->
               <div class="col-md-6">
                 <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal5">
-                  <img src="./assets/images/Certifications/python3-certification.png" alt="PDF Preview" class="card-img-top">
+                  <img src="./assets/images/Resume/Certifications/Python/python3-certification.PNG" alt="PDF Preview" class="card-img-top">
                   <div class="certification-card-body">
                     <h5 class="card-title">Programming Language - Python3</h5>
                   </div>
@@ -798,12 +854,36 @@
                   </div>
                 </div>
               </div>
-              <!-- Certification Card 2 -->
+              <!-- Certification Python 2 -->
               <div class="col-md-6">
                 <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal6">
-                  <img src="./assets/images/Certifications/python3-web-certification.jpg" alt="PDF Preview" class="card-img-top">
+                  <img src="./assets/images/Resume/Certifications/Python/python3-web-certification.jpg" alt="PDF Preview" class="card-img-top">
                   <div class="certification-card-body">
                     <h5 class="card-title">Web Data Extraction and Analysis</h5>
+                  </div>
+                  <div class="certification-card-footer">
+                    <span class="text-primary">Click to preview</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification FJCU Management -->
+              <div class="col-md-6">
+                <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal7">
+                  <img src="./assets/images/Resume/Certifications/FJCUacademic-certification.jpg" alt="PDF Preview" class="card-img-top">
+                  <div class="certification-card-body">
+                    <h5 class="card-title">Certificate Of Academic Excellence</h5>
+                  </div>
+                  <div class="certification-card-footer">
+                    <span class="text-primary">Click to preview</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification FJCU BigData -->
+              <div class="col-md-6">
+                <div class="certification-card" data-bs-toggle="modal" data-bs-target="#pdfModal8">
+                  <img src="./assets/images/Resume/Certifications/FJCUBigDataMicro.jpg" alt="PDF Preview" class="card-img-top">
+                  <div class="certification-card-body">
+                    <h5 class="card-title">Certificate Of Big Data Project</h5>
                   </div>
                   <div class="certification-card-footer">
                     <span class="text-primary">Click to preview</span>
@@ -813,7 +893,9 @@
             </div>
           </div>
         
-          <!-- Modal 1 -->
+          <!-- 彈跳視窗 -->
+
+          <!-- Python 1 -->
           <div class="modal fade" id="pdfModal5" tabindex="-1" aria-labelledby="pdfModalLabel5" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content modal-content-certification">
@@ -822,16 +904,16 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <iframe src="./assets/images/Certifications/python3-certification.pdf"></iframe>
+                  <iframe src="./assets/images/Resume/Certifications/Python/python3-certification.pdf"></iframe>
                 </div>
                 <div class="modal-footer">
-                  <a href="./assets/images/Certifications/python3-certification.pdf" download class="btn btn-download">Download</a>
+                  <a href="./assets/images/Resume/Certifications/Python/python3-certification.pdf" download class="btn btn-download">Download</a>
                 </div>
               </div>
             </div>
           </div>
         
-          <!-- Modal 2 -->
+          <!-- Python 2 -->
           <div class="modal fade" id="pdfModal6" tabindex="-1" aria-labelledby="pdfModalLabel6" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content modal-content-certification">
@@ -840,16 +922,53 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <iframe src="./assets/images/Certifications/python3-certification.pdf"></iframe>
+                  <iframe src="./assets/images/Resume/Certifications/Python/python3-certification.pdf"></iframe>
                 </div>
                 <div class="modal-footer">
-                  <a href="./assets/images/Certifications/python3-certification.pdf" download class="btn btn-download">Download</a>
+                  <a href="./assets/images/Resume/Certifications/Python/python3-certification.pdf" download class="btn btn-download">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification FJCU Management -->
+          <div class="modal fade" id="pdfModal7" tabindex="-1" aria-labelledby="pdfModalLabel7" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content modal-content-certification">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pdfModalLabel2">PDF Preview</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="./assets/images/Resume/Certifications/FJCUacademic-certification.pdf"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <a href="./assets/images/Resume/Certifications/FJCUacademic-certification.pdf" download class="btn btn-download">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification FJCU BigDataCrossDomain -->
+          <div class="modal fade" id="pdfModal8" tabindex="-1" aria-labelledby="pdfModalLabel8" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content modal-content-certification">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pdfModalLabel2">Preview Certificat</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-fjcu-img-container">
+                  <iframe src="./assets/images/Resume/Certifications/FJCUBigDataMicro_org_resize.jpg" class="modal-fjcu-img-ifame"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <a href="./assets/images/Resume/Certifications/FJCUBigDataMicro_org_resize.jpg" download class="btn btn-download">Download</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        
         <!--My Skills-->
         <section class="skill">
 
@@ -950,7 +1069,7 @@
         <header>
           <div class="header-content">
             <figure class="aboutme-avatar-box">
-              <img src="./assets/images/Advatar/my-pic-nobackground2.PNG" alt="mypic" width="60" data-testimonials-avatar>
+              <img src="./assets/images/Advatar/my-pic-nobackground_title.PNG" alt="mypic" width="60" data-update-avatar>
             </figure>
             <h2 class="h2 article-title">Projects</h2>
           </div>
@@ -1016,7 +1135,8 @@
 
           <!-- 全頁Project -->
           <ul class="project-list">
-            <!-- PatchMatch - Project5 -->
+
+            <!-- 8. PatchMatch -->
             <li class="project-item  active" data-filter-item data-category="Algorithm">
               <a href="https://github.com/chichichen77/PatchMatch" target="_blank">
 
@@ -1025,7 +1145,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/patchmatch2.png" alt="patchmatch" loading="lazy">
+                  <img src="./assets/images/Projects/8_PatchMatch/patchmatch.png" alt="patchmatch" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">
@@ -1038,6 +1158,7 @@
               </a>
             </li>
 
+            <!-- 7. StableDiffusion -->
             <li class="project-item  active" data-filter-item data-category="Algorithm">
               <a href="https://github.com/chichichen77/StableDiffusion" target="_blank">
 
@@ -1046,7 +1167,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/patchmatch2.png" alt="patchmatch" loading="lazy">
+                  <img src="./assets/images/Projects/7_StableDiffusion/stablediffusion.JPG" alt="patchmatch" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">
@@ -1059,7 +1180,7 @@
               </a>
             </li>
 
-            <!-- Restaurant - Project2 -->
+            <!-- 6. Taipei Restaurant -->
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://chichichen77.github.io/Restaurant/" target="_blank">
 
@@ -1068,7 +1189,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/TaipeiMrtRestuarant.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/Projects/6_TaipeiMRT/TaipeiMrtRestuarant.png" alt="orizon" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Taipei MRT Restaurant Recommendation</h3>
@@ -1078,7 +1199,7 @@
               </a>
             </li>
 
-            <!-- Restaurant - Project2 -->
+            <!-- 5. C# Web -->
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/Yuehua00/WebProject" target="_blank">
 
@@ -1087,7 +1208,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/TaipeiMrtRestuarant.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/Projects/4_LiaoYu/c#.jpg" alt="orizon" loading="lazy" class="img-fixed-size">
                 </figure>
 
                 <h3 class="project-title">c# project</h3>
@@ -1097,7 +1218,7 @@
               </a>
             </li>
 
-            <!-- LiaoYu - Project1 -->
+            <!-- 4. LiaoYu -->
             <li class="project-item  active" data-filter-item data-category="algorithm, applications, development">
               <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalLiaoYu">
 
@@ -1105,7 +1226,7 @@
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-                  <img src="./assets/images/ProjectBackgrounds/LiaoYu.png" alt="LiaoYu" loading="lazy" class="img-fixed-size">
+                  <img src="./assets/images/Projects/4_LiaoYu/LiaoYu.png" alt="LiaoYu" loading="lazy" class="img-fixed-size">
                 </figure>
 
                 <h3 class="project-title">LiaoYu</h3>
@@ -1117,7 +1238,7 @@
 
             
 
-            <!-- HousePrice - Project3 -->
+            <!-- 3. HousePredict -->
             <li class="project-item  active" data-filter-item data-category="Projects">
               <a href="#" data-bs-toggle="modal" data-bs-target="#projectModalHousePrice">
 
@@ -1126,7 +1247,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/HousePredictSys.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/Projects/3_HousePredict/housepredict.png" alt="fundo" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">House Price Prediction System</h3>
@@ -1136,7 +1257,7 @@
               </a>
             </li>
 
-            <!-- IncoomePredict - Project4 -->
+            <!-- 2. IncomePredict -->
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://chichichen77.github.io/ImplementationSystem/main.html" target="_blank">
 
@@ -1145,7 +1266,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/ProjectBackgrounds/IncomePredictSys2.png" alt="incomepredict" loading="lazy">
+                  <img src="./assets/images/Projects/2_IncomePredict/IncomePredictSys.png" alt="incomepredict" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Income Prediction System</h3>
@@ -1156,7 +1277,7 @@
             </li>
 
             
-
+            <!-- 1. BigDataCrossDomain -->
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
@@ -1295,7 +1416,7 @@
         <header>
           <div class="header-content">
             <figure class="aboutme-avatar-box">
-              <img src="./assets/images/Advatar/my-pic-nobackground2.PNG" alt="mypic" width="60" data-testimonials-avatar>
+              <img src="./assets/images/Advatar/my-pic-nobackground_title.PNG" alt="mypic" width="60" data-update-avatar>
             </figure>
             <h2 class="h2 article-title">Contact</h2>
           </div>
