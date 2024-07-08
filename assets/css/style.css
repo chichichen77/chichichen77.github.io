@@ -1280,6 +1280,50 @@ main {
   border: none;
   margin: 10px;
 }
+.bigdata-card-title{
+  margin-left: 10px;
+}
+.bigdata-card-text { 
+  margin-bottom: 20px; 
+  align-content: space-evenly;
+  color: var(--main-gray);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-300);
+  line-height: 1.3;
+}
+
+.bigdata-card-text .abouthref {
+  display: inline; 
+  white-space: nowrap;
+  color: var(--light-gray);
+  text-decoration: none;
+}
+
+.bigdata-card-text:hover {
+  color: var(--emphasize);
+}
+
+.bigdata-card-text-text p { margin-bottom: 15px; }
+
+
+
+
+.bigdata-card-website-display {
+  margin-top: 20px;
+}
+
+.bigdata-card-website-display h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+.bigdata-card-website-display img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 
 /*-----------------------------------*\
   #PROJECT APP CARDS
