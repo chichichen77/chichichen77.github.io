@@ -1,16 +1,5 @@
 /*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
+  #1 CUSTOM PROPERTY root設定
 \*-----------------------------------*/
 
 :root {
@@ -58,8 +47,6 @@
   --contact-title:hsl(204, 70%, 53%);
   --time-line-shadow: #7EA1FF;
 
-  /* 全頁Background */
-  /* solid */
   --main-blue:hsl(205, 100%, 48%);
   --emphasize:#ff6f61; /*珊瑚紅*/
   --blue-green:#0abab5;
@@ -71,15 +58,10 @@
   --main-gray: hsl(248, 0%, 20%); /* 大大標題 */
   --light-gray: hsl(0, 0%, 38%); /* 所有文字 */
   --lighter-gray: hsl(204, 8%, 86%);
-  
 
-
-  /**
-   * typography
-   */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: 'Comic Sans MS', 'Arial', sans-serif;
 
   /* font-size */
   --fs-1: 26px;
@@ -161,7 +143,7 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--bright-yellow);
+  background: #ffcc0090;
   color: var(--light-yellow-pink);
 }
 
@@ -871,8 +853,33 @@ main {
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
-
-
+/*  WorkExperience */
+.data-scientist-intern-imgcontainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+.data-scientist-intern-imgbox{
+  text-align: center;
+}
+.data-scientist-intern-imgbox img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.data-scientist-intern-imgbox h3{
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+.data-scientist-intern-buttomcontainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 20px;
+}
 /**
  * education and experience 
  */
@@ -1548,6 +1555,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: auto; }
 
 }
+  /**
+   * #Resume DataScientistIntern
+   */
+   .data-scientist-intern-imgbox {
+    flex: 0 1 100%;
+  }
+
 
 
 
