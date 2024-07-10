@@ -332,19 +332,20 @@
             </li>
 
             <li class="downloadapp-item">
+              <a href="https://play.google.com/store/apps/details?id=com.liaou.liaoyutest&hl=zh&pli=1">
 
-              <div class="downloadapp-icon-box">
-                <img src="./assets/images/About/Download-LiaoYu-logo.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="downloadapp-content-box">
-                <h4 class="h4 service-item-title">LiaoYu - GooglePlay download.</h4>
-
-                <p class="downloadapp-item-text">
-                  ...
-                </p>
-              </div>
-
+                <div class="downloadapp-icon-box">
+                  <img src="./assets/images/About/Download-LiaoYu-logo.png" alt="Web development icon" width="40">
+                </div>
+              
+                <div class="downloadapp-content-box">
+                  <h4 class="h4 service-item-title">LiaoYu - GooglePlay download.</h4>
+  
+                  <p class="downloadapp-item-text">
+                    ...
+                  </p>
+                </div>
+              </a>
             </li>
 
           </ul>
@@ -535,22 +536,38 @@
           <div class="modal fade" id="AI_algorithm_engineer" tabindex="-1" aria-labelledby="AI_algorithm_engineer"
             aria-hidden="true">
             <div class="modal-dialog modal-lg">
-              <div class="modal-content modal-content-certification">
+              <div class="modal-content project-modal-content">
 
                 <div class="modal-header">
-                  <h5 class="modal-title" id="AI_algorithm_engineer">projectModalHousePrice Details</h5>
+                  <h5 class="modal-title" id="AI_algorithm_engineer">AI Algorithm Assistant Engineer</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
-                  <div class="card">
-                    <img src="./assets/images/ProjectBackgrounds/LiaoYu.png" class="card-img-top" alt="LiaoYu">
-                    <div class="project-card-body">
-                      <h5 class="card-title">Chatbot APP Download Link</h5>
-                      <p class="card-text">Chatbot - LLM, LIWC, IOS, Android</p>
-                      <p class="card-text">Detailed description of the project, including features, technologies used,
-                        and other relevant information.</p>
-                    </div>
+                <div>
+                  <div class="card-container">
+
+                    <a href="https://github.com/chichichen77/StableDiffusion" target="_blank">
+                      <div class="modal-card-aiengineer">
+                        <img src="./assets/images/Projects/7_StableDiffusion/stablediffusion.JPG"
+                          alt="National Chengchi University Newspaper" class="card-img">
+                        <div class="aicard-body">
+                          <h5>StableDiffusion</h5>
+                          <p>Diffusion Model, Lora, VAE</p>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a href="https://github.com/chichichen77/PatchMatch" target="_blank">
+                      <div class="modal-card-aiengineer">
+                        <img src="./assets/images/Projects/8_PatchMatch/patchmatch.png"
+                          alt="College of Management, Fu Jen Catholic University" class="card-img">
+                        <div class="aicard-body">
+                          <h5>PatchMatch</h5>
+                          <p>Diffusion Model, Image restoration</p>
+                        </div>
+                      </div>
+                    </a>
+    
                   </div>
                 </div>
 
@@ -572,19 +589,23 @@
 
                 <div class="project-modal-body">
 
-                  <section class="data_scientist_intern_intro">
+                  <section class="data-scientist-intern-intro">
                     <h5>Summary</h5>
-                    <div class="about-text">
-                      <p>
-                        Contributed to artificial intelligence projects during his internship at the Data Services and
-                        Intelligent Decision Technology Department of ITRI. Specializing in artificial intelligence
-                        research, data analysis, big data visualization, program function development and image
-                        processing technology. Participate in multiple AI construction projects.<br>
-                        1. AI Mentor<br>
-                        2. Mastu CCTV<br>
-                        3. Business data analysis, testing and report
-                      </p>
+
+                    <div class="data-scientist-intern-card-mastu">
+                      <div class="data-scientist-intern-body">
+                        <p style="color: hsl(248, 0%, 20%); font-weight: 500;">
+                          Contributed to artificial intelligence projects during his internship at the Data Services and
+                          Intelligent Decision Technology Department of ITRI. Specializing in artificial intelligence
+                          research, data analysis, big data visualization, program function development and image
+                          processing technology. Participate in multiple AI construction projects.<br><br>
+                          <a href="#ai-mentor">1. AI Mentor</a>
+                          <a href="#mastu-cctv">2. Mastu</a>
+                          <a href="#business-data-analysis">3. Business data analysis, testing and report</a>
+                        </p>
+                      </div>
                     </div>
+
                   </section>
 
 
@@ -593,33 +614,43 @@
 
                 <div class="project-modal-body">
 
-                  <section class="app-data_scientist_intern_project">
+                  <section class="app-data-scientist-intern-project">
                     <h5>Deatils</h5>
                     <div class="app-container">
 
-                      <div class="app-card">
-                        <img src="./assets/images/Projects/4_LiaoYu/LiaoYu-logo.png" alt="App Store" class="app-img">
-                        <div class="app-body">
-                          <h5>AI Mentor</h5>
-                          <p>
-                            The AI Mentor system integrates domain-specific knowledge and the experience of top
-                            salespeople and good instructors when interacting with clients. By building this AI Mentor
-                            system using ChatGPT, the goal is to train new staff through the AI Mentor, shortening the
-                            time-consuming process of hands-on teaching. There are two function of the AI Mentor system,
-                            including:<br>
+                      <!-- 1.AI Mentor -->
+                      <div id="ai-mentor" class="data-scientist-intern-card-aimentor">
+                        <div class="data-scientist-intern-body-aimentor">
+                          <div class="data-scientist-intern-text-aimentor">
 
-                            ● Instructional Guidance: Insurance sales trainees can ask questions through the
-                            instructional
-                            guide, and the simulated human-like AI instructor will provide the correct product
-                            information or relevant knowledge in response.<br>
+                            <h5 class="data-scientist-intern-title">AI Mentor</h5>
+                            <p>
+                              The AI Mentor system integrates domain-specific knowledge and the experience of top
+                              salespeople and good instructors when interacting with clients. By building this AI Mentor
+                              system using ChatGPT, the goal is to train new staff through the AI Mentor, shortening the
+                              time-consuming process of hands-on teaching. There are two function of the AI Mentor
+                              system,
+                              including:<br><br>
 
-                            ● Simulated Practice: The AI simulates real-life customers, offering a genuine training
-                            experience. After the practice, the system provides scores and suggestions for improvement,
-                            allowing insurance sales traines to accumulate conversation experience and enhance their
-                            practical skills.
-                          </p>
+                              ● <b class="highlight" style="color: hsl(248, 0%, 20%);">Instructional Guidance:</b>
+                              Insurance sales trainees can ask questions through the
+                              instructional
+                              guide, and the simulated human-like AI instructor will provide the correct product
+                              information or relevant knowledge in response.<br><br>
+
+                              ● <b class="highlight" style="color: hsl(248, 0%, 20%);">Simulated Practice:</b> The AI
+                              simulates real-life customers, offering a genuine training
+                              experience. After the practice, the system provides scores and suggestions for
+                              improvement,
+                              allowing insurance sales traines to accumulate conversation experience and enhance their
+                              practical skills.
+                            </p>
+                          </div>
                           <img src="./assets/images/Resume/Work/datascientist_intern_AImentor.jpg" alt="AI mentor"
-                            class="intern-img">
+                            class="data-scientist-intern-aimentor-img">
+                        </div>
+
+                        <div class="data-scientist-intern-text-aimentor">
                           <p>
                             Contributes:<br>
 
@@ -632,66 +663,68 @@
                         </div>
                       </div>
 
-                      <div class="app-card">
-                        <div class="app-body">
-                          <h5>Mastu CCTV</h5>
+                      <!-- 2.Mastu CCTV -->
+                      <div id="mastu-cctv" class="data-scientist-intern-card-mastu">
+                        <div class="data-scientist-intern-body">
+                          <h5 class="data-scientist-intern-title">Mastu CCTV</h5>
                           <p>
                             Analyze the monitor image in the vistor centers in Mastu, predict pedestrian flow in order
                             to fine-tune the monitor image recognition system model.
                           </p>
                         </div>
-                        <div class="data_scientist_intern_imgcontainer">
-
+                        <div class="data-scientist-intern-imgcontainer">
                           <div class="data-scientist-intern-imgbox">
                             <h3>Beigan Visitor Center</h3>
                             <img src="./assets/images/Resume/Work/BeiganVistorCenter.jpg" alt="AI mentor"
-                            class="intern-img">
+                              class="intern-img">
                           </div>
+
                           <div class="data-scientist-intern-imgbox">
                             <h3>Nangan Visitor Center</h3>
                             <img src="./assets/images/Resume/Work/NanganVistorCenter.jpg" alt="AI mentor"
-                          class="intern-img">
+                              class="intern-img">
                           </div>
+
                           <div class="data-scientist-intern-imgbox">
                             <h3>Dongyin Visitor Center</h3>
                             <img src="./assets/images/Resume/Work/DongyinVistorCenter.jpg" alt="AI mentor"
-                          class="intern-img">
+                              class="intern-img">
                           </div>
+
                           <div class="data-scientist-intern-imgbox">
                             <h3>Juguang Visitor Center</h3>
                             <img src="./assets/images/Resume/Work/JuguangVistorCenter.jpg" alt="AI mentor"
-                          class="intern-img">
+                              class="intern-img">
                           </div>
-                          
-                          
-                          
                         </div>
-                        <div>
-                          <img src="./assets/images/Resume/Work/Anaresult1.png" alt="AI mentor"
-                            class="intern-img">
-                          <img src="./assets/images/Resume/Work/Anaresult2.jpg" alt="AI mentor"
-                          class="intern-img">
+                        <div class="data-scientist-intern-buttomcontainer">
+                          <div class="data-scientist-intern-imgbox">
+                            <img src="./assets/images/Resume/Work/Anaresult1.png" alt="AI mentor" class="intern-img">
+                            <img src="./assets/images/Resume/Work/Anaresult2.jpg" alt="AI mentor" class="intern-img">
+                          </div>
                         </div>
-                          
                       </div>
 
-                      <div class="app-card">
-                        <img src="./assets/images/Projects/4_LiaoYu/LiaoYu-logo.png" alt="Google Play" class="app-img">
-                        <div class="app-body">
-                          <h5>Business data analysis, testing and report</h5>
+                      <!-- 3.Business data analysis, testing and report -->
+                      <div id="business-data-analysis" class="data-scientist-intern-card-mastu">
+
+                        <div class="data-scientist-intern-body">
+                          <h5 class="data-scientist-intern-title">Business data analysis, testing and report</h5>
                           <p>
                             The AI ​​model predicts future sales and inventory levels of products. <br>
-
-                            Use traditional Moving Average methods and Deep Learning Models to predict future sales of products.
+                            Use traditional Moving Average methods and Deep Learning Models to predict future sales of
+                            products.
                           </p>
                         </div>
-                        <div>
-                          <img src="./assets/images/Resume/Work/BusinessExample.png" alt="AI mentor"
-                            class="intern-img">
-      
+
+                        <div class="data-scientist-intern-buttomcontainer">
+                          <div class="data-scientist-intern-imgbox">
+                            <img src="./assets/images/Resume/Work/BusinessExample.png" alt="AI mentor"
+                              class="intern-img">
+                          </div>
                         </div>
+
                       </div>
-                    </div>
                   </section>
 
 
@@ -879,45 +912,68 @@
               <div class="modal fade" id="ICTdetailsModal" tabindex="-1" aria-labelledby="ICTdetailsModal"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg custom-modal-lg">
-                  <div class="modal-content modal-content-certification">
+                  <div class="modal-content project-modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title" id="videoModalLabel">International ICT Innovative Services Awards 2022
                       </h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                      <div>
-                        <p>
-                          In a fast-paced society, it isn't easy to find good friends, so this research aims to create a
-                          chatbot exclusive to the user. Unlike common chatbots or dating apps on the market, our
-                          research's chatbot, the Language Style of Chatbot, reply's sentences will be converted through
-                          the "Language Style Model" . This model is innovatively created by this research. The language
-                          style of the chatbot will be conformed to the user's preference, and the reply will instantly
-                          break the time limit. The "Language Style Model" combining N-gram, Sentence Deconstruction
-                          model, and Word2FunctionVector. The sentence deconstruction model and Word2FunctionVector were
-                          innovatively established for this research. Its functions are briefly described below:<br>
-                          1.Sentence deconstruction model: Its function is to learn the language style of an author. Its
-                          operation process first is to segment the author's article into sentences and words, then
-                          convert the terms according to the part of speech, and finally record them in the model.<br>
-                          2.Word2FunctionVector: Similar to the usage of Word2Vec, it can convert a set of words into a
-                          set of vector spaces to express their semantic meaning, and the vector space given to terms by
-                          Word2FunctionVector can better represent their usage. For example, the words "I" and "you"
-                          have different meanings, and their parts of speech are personal pronouns, and their use is
-                          very similar. For example, "I am delighted" and "You are pleased" both express that someone is
-                          happy, but the words of this two sentences are not the same. In this case, the vectors
-                          assigned to the two words by Word2FunctionVector will be similar verse with the vector given
-                          by Word2Vec. <br>
-                          Also, our research can use the MBTI test and three-stage multiple-choice questions to
-                          customize a user-specific chatbot. The options in the three-stage multiple-choice questions
-                          are all sentences transformed by the Language Style Model. The Language Style Model improves
-                          the problem of standardized responses of chatbots on the market and better meet user
-                          preferences to create their chatbots.<br>
-                        </p>
+                    
+                    <div class="modal-card-ict">
+                      <div class="data-scientist-intern-body">
+                        <div class="research-text">
+                          <p>
+                            In a fast-paced society, it isn't easy to find good friends, so this research aims to create
+                            a chatbot exclusive to the user. Unlike common chatbots or dating apps on the market, our
+                            research's chatbot, the Language Style of Chatbot, reply's sentences will be converted
+                            through the "<b class="research-text-highlight">Language Style Model</b>". This model is
+                            innovatively created by this research. The language style of the chatbot will be conformed
+                            to the user's preference, and the reply will instantly break the time limit. The "<b
+                              class="research-text-highlight">Language Style Model</b>" combining <b
+                              class="research-text-highlight">N-gram</b>, <b class="research-text-highlight">Sentence Deconstruction
+                              model</b>, and <b class="research-text-highlight">Word2FunctionVector</b>. The <b
+                              class="research-text-highlight">sentence deconstruction model</b> and <b
+                              class="research-text-highlight">Word2FunctionVector</b> were innovatively established for this
+                            research. Its functions are briefly described below:
+                          </p>
+                          <ol>
+                            <li>
+                              <b class="research-text-highlight" style="color: hsl(205, 100%, 48%) !important; ">1. Sentence deconstruction model</b>: Its function is to learn the
+                              language style of an author. Its operation process first is to segment the author's
+                              article into sentences and words, then convert the terms according to the part of speech,
+                              and finally record them in the model.
+                            </li>
+                            <li>
+                              <b class="research-text-highlight" style="color: hsl(205, 100%, 48%) !important; ">2. Word2FunctionVector</b>: Similar to the usage of <b
+                                class="research-text-highlight" style="color: hsl(248, 0%, 20%) !important;">Word2Vec</b>, it can convert a set of words into a set of vector
+                              spaces to express their semantic meaning, and the vector space given to terms by <b
+                                class="research-text-highlight" style="color: hsl(248, 0%, 20%) !important;">Word2FunctionVector</b> can better represent their usage. For
+                              example, the words "I" and "you" have different meanings, and their parts of speech are
+                              personal pronouns, and their use is very similar. For example, "I am delighted" and "You
+                              are pleased" both express that someone is happy, but the words of these two sentences are
+                              not the same. In this case, the vectors assigned to the two words by <b
+                                class="research-text-highlight" style="color: hsl(248, 0%, 20%) !important;">Word2FunctionVector</b> will be similar to the vector given by
+                              <b class="research-text-highlight" style="color: hsl(248, 0%, 20%) !important;">Word2Vec</b>.
+                            </li>
+                          </ol>
+                          <p>
+                            Also, our research can use the <b class="research-text-highlight" style="color: hsl(248, 0%, 20%) !important;">MBTI test</b> and three-stage
+                            multiple-choice questions to customize a user-specific chatbot. The options in the
+                            three-stage multiple-choice questions are all sentences transformed by the Language Style
+                            Model. The Language Style Model improves the problem of standardized responses of chatbots
+                            on the market and better meets user preferences to create their chatbots.
+                          </p>
+                        </div>
+  
+                        
                       </div>
+
                       <div class="ratio ratio-16x9">
                         <iframe src="https://www.youtube.com/embed/s25cSmC7vWA?rel=0" allowfullscreen></iframe>
                       </div>
                     </div>
+
+
                   </div>
                 </div>
               </div>
@@ -1296,7 +1352,7 @@
             </li>
 
             <!-- 7. StableDiffusion -->
-            <li class="project-item  active" data-filter-item data-category="Algorithm">
+            <li id="#stablediffusion-project" class="project-item  active" data-filter-item data-category="Algorithm">
               <a href="https://github.com/chichichen77/StableDiffusion" target="_blank">
 
                 <figure class="project-img">
@@ -1635,7 +1691,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="/send-message" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>

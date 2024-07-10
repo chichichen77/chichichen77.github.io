@@ -132,6 +132,31 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // 防止默认表单提交行为
+
+  const formData = new FormData(form);
+
+  fetch('/send-message', {
+    method: 'POST',
+    body: formData,
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert('Message sent successfully!');
+      form.reset(); // 清除表单内容
+      formBtn.setAttribute("disabled", ""); // 禁用提交按钮
+    } else {
+      alert('Failed to send message.');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('Error sending message.');
+  });
+});
+
 
 
 // page navigation variables
