@@ -566,9 +566,13 @@ main {
  * #downloadapp 
  */
 
-.downloadapp { margin-bottom: 35px; }
+ .downloadapp {
+  margin-bottom: 35px;
+}
 
-.downloadapp-title { margin-bottom: 20px; }
+.downloadapp-title {
+  margin-bottom: 20px;
+}
 
 .downloadapp-list {
   display: grid;
@@ -585,7 +589,6 @@ main {
   display: flex; /* Ensure items are in a row */
   align-items: center;
   padding: 15px;
-  flex-direction: column;
 }
 
 .downloadapp-item::before {
@@ -609,10 +612,11 @@ main {
 
 .downloadapp-content-box {
   text-align: left;
+  flex: 1; /* Ensure the text takes the remaining space */
 }
 
-.downloadapp-content-box h4{ 
-  margin: 5px; 
+.downloadapp-content-box h4 { 
+  margin: 5px 0; 
   color: var(--main-gray);
   font-weight: bold;
 }
@@ -1902,18 +1906,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     display: block; /* 确保图片占据整个 figure 元素 */
   }
   
-
-  /* downloadapp */
-
-  /* .downloadapp-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 30px;
-  } */
-
-  .downloadapp-content-box { text-align: left; }
 
   /* update */
 
