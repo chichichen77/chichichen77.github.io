@@ -276,10 +276,10 @@ article.active {
 
 .content-card {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: var(--lighter-gray);
   padding: 15px;
   padding-top: 45px;
-  border-radius: 14px;
+  border-radius: 15px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
@@ -663,11 +663,13 @@ main {
   left: 0;
   transform: translate(15px, -25px);
   background: var(--white);
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: var(--shadow-1);
 }
 .update-avatar-box img{
-  border-radius: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-2);
+  
 }
 .update-item-title { margin-bottom: 7px; }
 
