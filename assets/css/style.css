@@ -55,13 +55,13 @@
   --downloadapp-background:hsl(0, 0%, 100%);
   --backbackground-color:hsl(0, 0%, 100%);
 
-  --main-gray: hsl(248, 0%, 20%); /* 大大標題 */
-  --light-gray: hsl(0, 0%, 38%); /* 所有文字 */
+  --main-gray: hsl(0, 0%, 0%); /* 大大標題 */
+  --light-gray: hsl(0, 0%, 20%); /* 所有文字 */
   --lighter-gray: hsl(204, 8%, 86%);
 
 
   /* font-family */
-  --ff-poppins: 'Comic Sans MS', 'Arial', sans-serif;
+  --ff-poppins: 'Roboto', sans-serif;
 
   /* font-size */
   --fs-1: 26px;
@@ -74,10 +74,10 @@
   --fs-8: 11px;
 
   /* font-weight */
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-600: 600;
+  --fw-300: 400;
+  --fw-400: 500;
+  --fw-500: 600;
+  --fw-600: 700;
   --fw-700: 700;
 
   /**
@@ -151,9 +151,28 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--light-yellow-pink); }
+body { 
+  background: var(--light-yellow-pink); 
+  font-family: var(--ff-poppins);
+  color: var(--main-gray);
+  font-weight: 400; /* 設置默認字重為400 */
+}
 
+p, .update-text, .timeline-text, .contact-info, .project-category {
+  color: var(--main-gray);
+  font-weight: 400;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--main-gray);
+  font-weight: 600; /* 標題使用稍微粗一點的字重 */
+}
+
+.info-content .title,
+.timeline-item-title,
+.project-title {
+  font-weight: 700; /* 某些特定元素使用中等字重 */
+}
 
 
 
@@ -1747,6 +1766,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   :root {
+    
 
     /**
      * typography
