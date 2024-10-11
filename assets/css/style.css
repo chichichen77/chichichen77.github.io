@@ -558,6 +558,11 @@ main {
   color: var(--emphasize);
 }
 
+.highlight2 {
+  font-weight: bold;
+
+}
+
 .btn-to-resume {
   display: inline-flex;
   align-items: center;
